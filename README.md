@@ -1,8 +1,8 @@
-# Museum DB example app
+# Museum DB
 
-This app is an example that shows usage of Docker in combination with Python and some visualization libraries.
+This project is an example that shows usage of Docker in combination with Python and some visualization libraries.
 
-## Pre-requisites
+## Prerequisites
 
 You need to have Docker service running in your environment. 
 If running a desktop system you can download Docker Desktop:
