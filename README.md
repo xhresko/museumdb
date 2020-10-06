@@ -41,6 +41,18 @@ museumdb_backend_1 exited with code 0
 ```
 
 Open the notebook and try the provided examples.
+If you need to see the notebook URL again, you can list it by getting the notebook container id and then running command inside of it.
+
+For example:
+```
+$ docker ps | grep museumdb_notebook
+670a5c1447c9        museumdb_notebook   "/bin/sh -c 'jupyter…"   51 minutes ago      Up 51 minutes       0.0.0.0:8585->8585/tcp              museumdb_notebook_1
+
+$ docker exec -it 670a5c1447c9 jupyter notebook list
+
+Currently running servers:
+http://localhost:8585/?token=304359a18effef067afdc2a75ce4fe66cf93810c14cf7c8e :: /notebooks
+```
 
 Once you are done, you can put the containers down by running:
 ```
