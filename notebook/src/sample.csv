@@ -1,4 +1,4 @@
-,Museum,Museum Wiki,Museum Wikidata ID,Country,Country Wiki,Country Wikidata ID,City,City Wiki,City Wikidata ID,Visitors per year,City population,Country population,Wiki languages count,Continent,Museum types,Art/culture museum
+index,Museum,Museum Wiki,Museum Wikidata ID,Country,Country Wiki,Country Wikidata ID,City,City Wiki,City Wikidata ID,Visitors per year,City population,Country population,Wiki languages count,Continent,Museum types,Art/culture museum
 0,Louvre,/wiki/Louvre,Q19675,France,/wiki/France,Q142,Paris,/wiki/Paris,Q90,9600000,2187526,66628000,152,Europe,"['art museum', 'museum of culture', 'museum']",True
 1,National Museum of China,/wiki/National_Museum_of_China,Q1074318,China,/wiki/China,Q148,Beijing,/wiki/Beijing,Q956,7390000,21710000,1409517397,30,Asia,"['national museum', 'museum']",False
 2,Vatican Museums,/wiki/Vatican_Museums,Q182955,Vatican City,/wiki/Vatican_City,Q237,Vatican City,/wiki/Vatican_City,Q237,6882931,1000,1000,56,Europe,"['art museum', 'national museum', 'museum of culture', 'museum']",True

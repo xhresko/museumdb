@@ -1,5 +1,6 @@
-FROM jupyter/datascience-notebook
+FROM python:3.8
 WORKDIR /notebooks
-COPY . /notebooks/
-RUN pip install mysql-connector-python SQLAlchemy plotly seaborn
-CMD jupyter notebook --ip=* --port=8585
+COPY requirements.txt /notebooks/
+RUN pip install -r requirements.txt
+COPY ./src/ /notebooks/
+CMD jupyter notebook --ip=0.0.0.0 --port=8585 --allow-root
