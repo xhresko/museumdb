@@ -1,5 +1,6 @@
 import pandas as pd
 import mysql.connector
+from mysql.connector.errors import InterfaceError
 from sqlalchemy import types, create_engine
 import logging
 
@@ -22,7 +23,14 @@ if __name__ == "__main__":
     MYSQL_DATABASE = 'example'
 
     engine = create_engine(f'mysql+mysqlconnector://{MYSQL_USER}:{MYSQL_PASSWORD}@{MYSQL_HOST}:{MYSQL_PORT}/{MYSQL_DATABASE}', echo=False)
-    connection = engine.connect()
+
+    try:
+        connection = engine.connect()
+    except InterfaceError as e:
+        print('DB unreachable, waiting ...')
+        sleep(30)
+        connection = engine.connect()
+
     
     connection.execute('DROP TABLE IF EXISTS museums;')
 
